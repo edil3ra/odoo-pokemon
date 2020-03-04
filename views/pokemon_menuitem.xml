@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Top menu item -->
+        <menuitem name="Pokemon" id="menu_root_pokemon" />
+        <menuitem name="pokemons" ide="menu_pokemon" parent="menu_root_pokemon" />
+        
+
+    </data>
+</odoo>
