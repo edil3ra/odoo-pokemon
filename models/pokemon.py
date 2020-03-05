@@ -9,19 +9,9 @@ class Pokemon(models.Model):
     description = fields.Text('description')
     height = fields.Float('size in dm')
     weight = fields.Float('weight in hectograms')
-    species = fields.Many2many('pokemon.species', stryng='species')
-    sprites = fields.Many2many('pokemon.sprite', string='sprites')
     types = fields.Many2many('pokemon.type', string='types')
-    moves = fields.One2many('pokemon.learned.move', inverse_name='pokemon')
-    
-
-class PokemonSpecies(models.Model):
-    _name = 'pokemon.species'
-    _description = 'Pokemon species'
-
-    name = fields.Char('name')
-    description = fields.Text('description')
-    pokemons = fields.Many2many('pokemon', string='pokemons')
+    sprites = fields.One2many('pokemon.sprite', inverse_name='pokemon', string='sprites')
+    moves = fields.One2many('pokemon.learned.move', inverse_name='pokemon', string="moves")
 
 
 class PokemonSprite(models.Model):
@@ -29,8 +19,12 @@ class PokemonSprite(models.Model):
     _description = 'Pokemon Sprite Type'
 
     name = fields.Char('name')
-    url = fields.Binary('url')
-    pokemons = fields.Many2many('pokemon', string='pokemons')
+    side = fields.Selection([
+        ('front', 'Front side'),
+        ('back', 'Back side')
+    ], "Sides")
+    file = fields.Binary('file')
+    pokemon = fields.Many2one('pokemon', string='pokemons')
 
 
 class PokemonType(models.Model):

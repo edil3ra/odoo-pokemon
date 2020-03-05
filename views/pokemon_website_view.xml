@@ -1,0 +1,11 @@
+<odoo>
+    <template id="pokemon.website">
+        <t t-call="website.layout">
+
+
+            <div id="pokemon_application"></div>
+
+
+        </t>
+    </template>
+</odoo>

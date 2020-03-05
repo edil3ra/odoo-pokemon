@@ -24,13 +24,6 @@
             />
 
         <menuitem
-            name="Species"
-            id="menu_pokemon_species_item"
-            parent="menu_category_pokemon"
-            action="action_pokemon_species_act_window"
-            />
-
-        <menuitem
             name="Sprite"
             id="menu_pokemon_sprites_item"
             parent="menu_category_pokemon"

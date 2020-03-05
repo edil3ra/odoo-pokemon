@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="demo_pokemon_bulbizar_sprite_back" model="pokemon.sprite">
+	        <field name="name">bulbizar back</field>
+	        <field name="side">back</field>
+	        <field name="file" file="pokemon/data/static/demo/bulbasaur_back.png" type="base64"/>
+        </record>
+
+        <record id="demo_pokemon_bulbizar_sprite_front" model="pokemon.sprite">
+	        <field name="name">bulbizar front</field>
+	        <field name="side">front</field>
+	        <field name="file" file="pokemon/data/static/demo/bulbasaur_front.png" type="base64"/>
+        </record>
+
+        <record id="demo_pokemon_bulbizar" model="pokemon">
+	        <field name="name">bulbasaur</field>
+	        <field name="height">7</field>
+	        <field name="weight">69</field>
+            <field
+                name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_bulbizar_sprite_back'), ref('demo_pokemon_bulbizar_sprite_front')])]"/>
+            <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')])]" />
+        </record>
+        
+        <record id="demo_pokemon_mewto_sprite_back" model="pokemon.sprite">
+	        <field name="name">mewto back</field>
+	        <field name="side">back</field>
+	        <field name="file" file="pokemon/data/static/demo/mewto_back.png" type="base64"/>
+        </record>
+
+        <record id="demo_pokemon_mewto_sprite_front" model="pokemon.sprite">
+	        <field name="name">mewto front</field>
+	        <field name="side">front</field>
+	        <field name="file" file="pokemon/data/static/demo/mewto_front.png" type="base64"/>
+        </record>
+
+        <record id="demo_pokemon_mewto" model="pokemon">
+	        <field name="name">mewto</field>
+	        <field name="height">20</field>
+	        <field name="weight">1220</field>
+            <field
+                name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_mewto_sprite_back'), ref('demo_pokemon_mewto_sprite_front')])]"/>
+            <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')])]" />
+        </record>
+
+
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+        <record id="pokemon_type_bug" model="pokemon.type"><field name="name">bug</field></record>
+        <record id="pokemon_type_dragon" model="pokemon.type"><field name="name">dragon</field></record>
+        <record id="pokemon_type_electric" model="pokemon.type"><field name="name">electric</field></record>
+        <record id="pokemon_type_fairy" model="pokemon.type"><field name="name">fairy</field></record>
+        <record id="pokemon_type_fighting" model="pokemon.type"><field name="name">fighting</field></record>
+        <record id="pokemon_type_fire" model="pokemon.type"><field name="name">fire</field></record>
+        <record id="pokemon_type_flying" model="pokemon.type"><field name="name">flying</field></record>
+        <record id="pokemon_type_ghost" model="pokemon.type"><field name="name">ghost</field></record>
+        <record id="pokemon_type_grass" model="pokemon.type"><field name="name">grass</field></record>
+        <record id="pokemon_type_ground" model="pokemon.type"><field name="name">ground</field></record>
+        <record id="pokemon_type_ice" model="pokemon.type"><field name="name">ice</field></record>
+        <record id="pokemon_type_normal" model="pokemon.type"><field name="name">normal</field></record>
+        <record id="pokemon_type_poison" model="pokemon.type"><field name="name">poison</field></record>
+        <record id="pokemon_type_psychic" model="pokemon.type"><field name="name">psychic</field></record>
+        <record id="pokemon_type_rock" model="pokemon.type"><field name="name">rock</field></record>
+        <record id="pokemon_type_steel" model="pokemon.type"><field name="name">steel</field></record>
+        <record id="pokemon_type_water" model="pokemon.type"><field name="name">water</field></record>
+    </data>
+</odoo>

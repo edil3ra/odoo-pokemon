@@ -20,17 +20,20 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'website'],
     'application': True,
     # always loaded
     'data': [
         'security/pokemon_security.xml',
         'security/ir.model.access.csv',
+        'data/pokemon_data.xml',
+        'views/pokemon.xml',
         'views/pokemon_view.xml',
         'views/pokemon_menuitem.xml',
+        'views/pokemon_website_view.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        
+        'data/pokemon_demo.xml'
     ],
 }
