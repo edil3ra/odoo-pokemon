@@ -1,2 +1,14 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_pokemon_pokemon,pokemon.pokemon,model_pokemon_pokemon,base.group_user,1,1,1,1
+access_pokemon_user,pokemon_user,model_pokemon,pokemon.group_user_pokemon,1,0,0,0
+access_pokemon_manager,pokemon_manager,model_pokemon,pokemon.group_manager_pokemon,1,1,1,1
+access_pokemon_species_user,pokemon_species_user,model_pokemon_species,pokemon.group_user_pokemon,1,0,0,0
+access_pokemon_species_manager,pokemon_species_manager,model_pokemon_species,pokemon.group_manager_pokemon,1,1,1,1
+access_pokemon_sprite_user,pokemon_sprite_user,model_pokemon_sprite,pokemon.group_user_pokemon,1,0,0,0
+access_pokemon_sprite_manager,pokemon_sprite_manager,model_pokemon_sprite,pokemon.group_manager_pokemon,1,1,1,1
+access_pokemon_type_user,pokemon_type_user,model_pokemon_type,pokemon.group_user_pokemon,1,0,0,0
+access_pokemon_type_manager,pokemon_type_manager,model_pokemon_type,pokemon.group_manager_pokemon,1,1,1,1
+access_pokemon_move_user,pokemon_move_user,model_pokemon_move,pokemon.group_user_pokemon,1,0,0,0
+access_pokemon_move_manager,pokemon_move_manager,model_pokemon_move,pokemon.group_manager_pokemon,1,1,1,1
+access_pokemon_learned_move_user,pokemon_learned_move_user,model_pokemon_learned_move,pokemon.group_user_pokemon,1,0,0,0
+access_pokemon_learned_move_manager,pokemon_learned_move_manager,model_pokemon_learned_move,pokemon.group_manager_pokemon,1,1,1,1
+

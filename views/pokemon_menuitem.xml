@@ -2,10 +2,61 @@
 <odoo>
     <data>
 
-        <!-- Top menu item -->
-        <menuitem name="Pokemon" id="menu_root_pokemon" />
-        <menuitem name="pokemons" ide="menu_pokemon" parent="menu_root_pokemon" />
+        <!-- root menu item -->
+        <menuitem
+            name="Pokemon"
+            id="menu_root_pokemon"
+            />
+
+        <!-- pokemon category menu  -->
+        <menuitem
+            name="Pokemons"
+            id="menu_category_pokemon"
+            parent="menu_root_pokemon"
+            />
         
+        <!-- pokemon menu items  -->
+        <menuitem
+            name="Pokemon"
+            id="menu_pokemon_item"
+            parent="menu_category_pokemon"
+            action="pokemon.action_pokemon_act_window"
+            />
+
+        <menuitem
+            name="Species"
+            id="menu_pokemon_species_item"
+            parent="menu_category_pokemon"
+            action="action_pokemon_species_act_window"
+            />
+
+        <menuitem
+            name="Sprite"
+            id="menu_pokemon_sprites_item"
+            parent="menu_category_pokemon"
+            action="action_pokemon_sprite_act_window"
+            />
+
+        <menuitem
+            name="Type"
+            id="menu_pokemon_types_item"
+            parent="menu_category_pokemon"
+            action="action_pokemon_type_act_window"
+            />
+
+        <menuitem
+            name="Move"
+            id="menu_pokemon_moves_item"
+            parent="menu_category_pokemon"
+            action="action_pokemon_move_act_window"
+            />
+
+        <menuitem
+            name="Leaned Move"
+            id="menu_pokemon_learned_moves_item"
+            parent="menu_category_pokemon"
+            action="action_pokemon_learned_move_act_window"
+            />
 
     </data>
 </odoo>

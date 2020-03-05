@@ -1,7 +1,38 @@
 <odoo>
-    <record id="action_account_form" model="ir.actions.act_window">
+    <record id="action_pokemon_act_window" model="ir.actions.act_window">
         <field name="name">Pokemons</field>
         <field name="res_model">pokemon</field>
         <field name="view_mode">tree,form</field>
-    </record>    
+    </record>
+
+    <record id="action_pokemon_species_act_window" model="ir.actions.act_window">
+        <field name="name">Species</field>
+        <field name="res_model">pokemon.species</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_pokemon_sprite_act_window" model="ir.actions.act_window">
+        <field name="name">Sprites</field>
+        <field name="res_model">pokemon.sprite</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_pokemon_type_act_window" model="ir.actions.act_window">
+        <field name="name">Types</field>
+        <field name="res_model">pokemon.type</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_pokemon_move_act_window" model="ir.actions.act_window">
+        <field name="name">Moves</field>
+        <field name="res_model">pokemon.move</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_pokemon_learned_move_act_window" model="ir.actions.act_window">
+        <field name="name">Pomkemon learned moves</field>
+        <field name="res_model">pokemon.learned.move</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
 </odoo>

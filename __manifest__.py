@@ -24,11 +24,13 @@
     'application': True,
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/pokemon_security.xml',
+        'security/ir.model.access.csv',
+        'views/pokemon_view.xml',
         'views/pokemon_menuitem.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        
     ],
 }
