@@ -1,50 +1,3755 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record id="demo_pokemon_bulbizar_sprite_back" model="pokemon.sprite">
-	        <field name="name">bulbizar back</field>
-	        <field name="side">back</field>
-	        <field name="file" file="pokemon/data/static/demo/bulbasaur_back.png" type="base64"/>
-        </record>
-
-        <record id="demo_pokemon_bulbizar_sprite_front" model="pokemon.sprite">
-	        <field name="name">bulbizar front</field>
-	        <field name="side">front</field>
-	        <field name="file" file="pokemon/data/static/demo/bulbasaur_front.png" type="base64"/>
-        </record>
-
-        <record id="demo_pokemon_bulbizar" model="pokemon">
-	        <field name="name">bulbasaur</field>
-	        <field name="height">7</field>
-	        <field name="weight">69</field>
-            <field
-                name="sprites"
-                eval="[(6, 0, [ref('demo_pokemon_bulbizar_sprite_back'), ref('demo_pokemon_bulbizar_sprite_front')])]"/>
-            <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')])]" />
-        </record>
-        
-        <record id="demo_pokemon_mewto_sprite_back" model="pokemon.sprite">
-	        <field name="name">mewto back</field>
-	        <field name="side">back</field>
-	        <field name="file" file="pokemon/data/static/demo/mewto_back.png" type="base64"/>
-        </record>
-
-        <record id="demo_pokemon_mewto_sprite_front" model="pokemon.sprite">
-	        <field name="name">mewto front</field>
-	        <field name="side">front</field>
-	        <field name="file" file="pokemon/data/static/demo/mewto_front.png" type="base64"/>
-        </record>
-
-        <record id="demo_pokemon_mewto" model="pokemon">
-	        <field name="name">mewto</field>
-	        <field name="height">20</field>
-	        <field name="weight">1220</field>
-            <field
-                name="sprites"
-                eval="[(6, 0, [ref('demo_pokemon_mewto_sprite_back'), ref('demo_pokemon_mewto_sprite_front')])]"/>
-            <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')])]" />
-        </record>
 
 
-    </data>
+    <record id="demo_pokemon_bulbasaur_sprite_back" model="pokemon.sprite">
+        <field name="name">bulbasaur back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/bulbasaur_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_bulbasaur_sprite_front" model="pokemon.sprite">
+        <field name="name">bulbasaur front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/bulbasaur_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_bulbasaur" model="pokemon">
+        <field name="name">bulbasaur</field>
+        <field name="weight">69</field>
+        <field name="height">7</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_bulbasaur_sprite_back'), ref('demo_pokemon_bulbasaur_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_ivysaur_sprite_back" model="pokemon.sprite">
+        <field name="name">ivysaur back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/ivysaur_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ivysaur_sprite_front" model="pokemon.sprite">
+        <field name="name">ivysaur front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/ivysaur_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ivysaur" model="pokemon">
+        <field name="name">ivysaur</field>
+        <field name="weight">130</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_ivysaur_sprite_back'), ref('demo_pokemon_ivysaur_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_venusaur_sprite_back" model="pokemon.sprite">
+        <field name="name">venusaur back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/venusaur_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_venusaur_sprite_front" model="pokemon.sprite">
+        <field name="name">venusaur front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/venusaur_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_venusaur" model="pokemon">
+        <field name="name">venusaur</field>
+        <field name="weight">1000</field>
+        <field name="height">20</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_venusaur_sprite_back'), ref('demo_pokemon_venusaur_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_charmander_sprite_back" model="pokemon.sprite">
+        <field name="name">charmander back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/charmander_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_charmander_sprite_front" model="pokemon.sprite">
+        <field name="name">charmander front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/charmander_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_charmander" model="pokemon">
+        <field name="name">charmander</field>
+        <field name="weight">85</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_charmander_sprite_back'), ref('demo_pokemon_charmander_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_charmeleon_sprite_back" model="pokemon.sprite">
+        <field name="name">charmeleon back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/charmeleon_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_charmeleon_sprite_front" model="pokemon.sprite">
+        <field name="name">charmeleon front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/charmeleon_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_charmeleon" model="pokemon">
+        <field name="name">charmeleon</field>
+        <field name="weight">190</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_charmeleon_sprite_back'), ref('demo_pokemon_charmeleon_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_charizard_sprite_back" model="pokemon.sprite">
+        <field name="name">charizard back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/charizard_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_charizard_sprite_front" model="pokemon.sprite">
+        <field name="name">charizard front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/charizard_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_charizard" model="pokemon">
+        <field name="name">charizard</field>
+        <field name="weight">905</field>
+        <field name="height">17</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_charizard_sprite_back'), ref('demo_pokemon_charizard_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_squirtle_sprite_back" model="pokemon.sprite">
+        <field name="name">squirtle back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/squirtle_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_squirtle_sprite_front" model="pokemon.sprite">
+        <field name="name">squirtle front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/squirtle_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_squirtle" model="pokemon">
+        <field name="name">squirtle</field>
+        <field name="weight">90</field>
+        <field name="height">5</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_squirtle_sprite_back'), ref('demo_pokemon_squirtle_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_wartortle_sprite_back" model="pokemon.sprite">
+        <field name="name">wartortle back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/wartortle_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_wartortle_sprite_front" model="pokemon.sprite">
+        <field name="name">wartortle front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/wartortle_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_wartortle" model="pokemon">
+        <field name="name">wartortle</field>
+        <field name="weight">225</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_wartortle_sprite_back'), ref('demo_pokemon_wartortle_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_blastoise_sprite_back" model="pokemon.sprite">
+        <field name="name">blastoise back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/blastoise_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_blastoise_sprite_front" model="pokemon.sprite">
+        <field name="name">blastoise front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/blastoise_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_blastoise" model="pokemon">
+        <field name="name">blastoise</field>
+        <field name="weight">855</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_blastoise_sprite_back'), ref('demo_pokemon_blastoise_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_caterpie_sprite_back" model="pokemon.sprite">
+        <field name="name">caterpie back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/caterpie_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_caterpie_sprite_front" model="pokemon.sprite">
+        <field name="name">caterpie front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/caterpie_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_caterpie" model="pokemon">
+        <field name="name">caterpie</field>
+        <field name="weight">29</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_caterpie_sprite_back'), ref('demo_pokemon_caterpie_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_metapod_sprite_back" model="pokemon.sprite">
+        <field name="name">metapod back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/metapod_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_metapod_sprite_front" model="pokemon.sprite">
+        <field name="name">metapod front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/metapod_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_metapod" model="pokemon">
+        <field name="name">metapod</field>
+        <field name="weight">99</field>
+        <field name="height">7</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_metapod_sprite_back'), ref('demo_pokemon_metapod_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_butterfree_sprite_back" model="pokemon.sprite">
+        <field name="name">butterfree back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/butterfree_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_butterfree_sprite_front" model="pokemon.sprite">
+        <field name="name">butterfree front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/butterfree_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_butterfree" model="pokemon">
+        <field name="name">butterfree</field>
+        <field name="weight">320</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_butterfree_sprite_back'), ref('demo_pokemon_butterfree_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_weedle_sprite_back" model="pokemon.sprite">
+        <field name="name">weedle back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/weedle_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_weedle_sprite_front" model="pokemon.sprite">
+        <field name="name">weedle front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/weedle_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_weedle" model="pokemon">
+        <field name="name">weedle</field>
+        <field name="weight">32</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_weedle_sprite_back'), ref('demo_pokemon_weedle_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_kakuna_sprite_back" model="pokemon.sprite">
+        <field name="name">kakuna back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/kakuna_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kakuna_sprite_front" model="pokemon.sprite">
+        <field name="name">kakuna front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/kakuna_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kakuna" model="pokemon">
+        <field name="name">kakuna</field>
+        <field name="weight">100</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_kakuna_sprite_back'), ref('demo_pokemon_kakuna_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_beedrill_sprite_back" model="pokemon.sprite">
+        <field name="name">beedrill back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/beedrill_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_beedrill_sprite_front" model="pokemon.sprite">
+        <field name="name">beedrill front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/beedrill_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_beedrill" model="pokemon">
+        <field name="name">beedrill</field>
+        <field name="weight">295</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_beedrill_sprite_back'), ref('demo_pokemon_beedrill_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_pidgey_sprite_back" model="pokemon.sprite">
+        <field name="name">pidgey back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/pidgey_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pidgey_sprite_front" model="pokemon.sprite">
+        <field name="name">pidgey front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/pidgey_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pidgey" model="pokemon">
+        <field name="name">pidgey</field>
+        <field name="weight">18</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_pidgey_sprite_back'), ref('demo_pokemon_pidgey_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_pidgeotto_sprite_back" model="pokemon.sprite">
+        <field name="name">pidgeotto back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/pidgeotto_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pidgeotto_sprite_front" model="pokemon.sprite">
+        <field name="name">pidgeotto front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/pidgeotto_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pidgeotto" model="pokemon">
+        <field name="name">pidgeotto</field>
+        <field name="weight">300</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_pidgeotto_sprite_back'), ref('demo_pokemon_pidgeotto_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_pidgeot_sprite_back" model="pokemon.sprite">
+        <field name="name">pidgeot back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/pidgeot_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pidgeot_sprite_front" model="pokemon.sprite">
+        <field name="name">pidgeot front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/pidgeot_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pidgeot" model="pokemon">
+        <field name="name">pidgeot</field>
+        <field name="weight">395</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_pidgeot_sprite_back'), ref('demo_pokemon_pidgeot_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_rattata_sprite_back" model="pokemon.sprite">
+        <field name="name">rattata back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/rattata_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rattata_sprite_front" model="pokemon.sprite">
+        <field name="name">rattata front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/rattata_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rattata" model="pokemon">
+        <field name="name">rattata</field>
+        <field name="weight">35</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_rattata_sprite_back'), ref('demo_pokemon_rattata_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_raticate_sprite_back" model="pokemon.sprite">
+        <field name="name">raticate back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/raticate_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_raticate_sprite_front" model="pokemon.sprite">
+        <field name="name">raticate front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/raticate_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_raticate" model="pokemon">
+        <field name="name">raticate</field>
+        <field name="weight">185</field>
+        <field name="height">7</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_raticate_sprite_back'), ref('demo_pokemon_raticate_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_spearow_sprite_back" model="pokemon.sprite">
+        <field name="name">spearow back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/spearow_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_spearow_sprite_front" model="pokemon.sprite">
+        <field name="name">spearow front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/spearow_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_spearow" model="pokemon">
+        <field name="name">spearow</field>
+        <field name="weight">20</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_spearow_sprite_back'), ref('demo_pokemon_spearow_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_fearow_sprite_back" model="pokemon.sprite">
+        <field name="name">fearow back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/fearow_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_fearow_sprite_front" model="pokemon.sprite">
+        <field name="name">fearow front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/fearow_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_fearow" model="pokemon">
+        <field name="name">fearow</field>
+        <field name="weight">380</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_fearow_sprite_back'), ref('demo_pokemon_fearow_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_ekans_sprite_back" model="pokemon.sprite">
+        <field name="name">ekans back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/ekans_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ekans_sprite_front" model="pokemon.sprite">
+        <field name="name">ekans front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/ekans_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ekans" model="pokemon">
+        <field name="name">ekans</field>
+        <field name="weight">69</field>
+        <field name="height">20</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_ekans_sprite_back'), ref('demo_pokemon_ekans_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_arbok_sprite_back" model="pokemon.sprite">
+        <field name="name">arbok back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/arbok_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_arbok_sprite_front" model="pokemon.sprite">
+        <field name="name">arbok front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/arbok_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_arbok" model="pokemon">
+        <field name="name">arbok</field>
+        <field name="weight">650</field>
+        <field name="height">35</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_arbok_sprite_back'), ref('demo_pokemon_arbok_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_pikachu_sprite_back" model="pokemon.sprite">
+        <field name="name">pikachu back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/pikachu_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pikachu_sprite_front" model="pokemon.sprite">
+        <field name="name">pikachu front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/pikachu_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pikachu" model="pokemon">
+        <field name="name">pikachu</field>
+        <field name="weight">60</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_pikachu_sprite_back'), ref('demo_pokemon_pikachu_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_raichu_sprite_back" model="pokemon.sprite">
+        <field name="name">raichu back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/raichu_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_raichu_sprite_front" model="pokemon.sprite">
+        <field name="name">raichu front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/raichu_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_raichu" model="pokemon">
+        <field name="name">raichu</field>
+        <field name="weight">300</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_raichu_sprite_back'), ref('demo_pokemon_raichu_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_sandshrew_sprite_back" model="pokemon.sprite">
+        <field name="name">sandshrew back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/sandshrew_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_sandshrew_sprite_front" model="pokemon.sprite">
+        <field name="name">sandshrew front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/sandshrew_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_sandshrew" model="pokemon">
+        <field name="name">sandshrew</field>
+        <field name="weight">120</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_sandshrew_sprite_back'), ref('demo_pokemon_sandshrew_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_sandslash_sprite_back" model="pokemon.sprite">
+        <field name="name">sandslash back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/sandslash_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_sandslash_sprite_front" model="pokemon.sprite">
+        <field name="name">sandslash front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/sandslash_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_sandslash" model="pokemon">
+        <field name="name">sandslash</field>
+        <field name="weight">295</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_sandslash_sprite_back'), ref('demo_pokemon_sandslash_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_nidoran-f_sprite_back" model="pokemon.sprite">
+        <field name="name">nidoran-f back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/nidoran-f_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoran-f_sprite_front" model="pokemon.sprite">
+        <field name="name">nidoran-f front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/nidoran-f_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoran-f" model="pokemon">
+        <field name="name">nidoran-f</field>
+        <field name="weight">70</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_nidoran-f_sprite_back'), ref('demo_pokemon_nidoran-f_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_nidorina_sprite_back" model="pokemon.sprite">
+        <field name="name">nidorina back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/nidorina_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidorina_sprite_front" model="pokemon.sprite">
+        <field name="name">nidorina front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/nidorina_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidorina" model="pokemon">
+        <field name="name">nidorina</field>
+        <field name="weight">200</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_nidorina_sprite_back'), ref('demo_pokemon_nidorina_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_nidoqueen_sprite_back" model="pokemon.sprite">
+        <field name="name">nidoqueen back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/nidoqueen_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoqueen_sprite_front" model="pokemon.sprite">
+        <field name="name">nidoqueen front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/nidoqueen_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoqueen" model="pokemon">
+        <field name="name">nidoqueen</field>
+        <field name="weight">600</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_nidoqueen_sprite_back'), ref('demo_pokemon_nidoqueen_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground'), ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_nidoran-m_sprite_back" model="pokemon.sprite">
+        <field name="name">nidoran-m back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/nidoran-m_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoran-m_sprite_front" model="pokemon.sprite">
+        <field name="name">nidoran-m front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/nidoran-m_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoran-m" model="pokemon">
+        <field name="name">nidoran-m</field>
+        <field name="weight">90</field>
+        <field name="height">5</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_nidoran-m_sprite_back'), ref('demo_pokemon_nidoran-m_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_nidorino_sprite_back" model="pokemon.sprite">
+        <field name="name">nidorino back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/nidorino_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidorino_sprite_front" model="pokemon.sprite">
+        <field name="name">nidorino front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/nidorino_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidorino" model="pokemon">
+        <field name="name">nidorino</field>
+        <field name="weight">195</field>
+        <field name="height">9</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_nidorino_sprite_back'), ref('demo_pokemon_nidorino_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_nidoking_sprite_back" model="pokemon.sprite">
+        <field name="name">nidoking back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/nidoking_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoking_sprite_front" model="pokemon.sprite">
+        <field name="name">nidoking front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/nidoking_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_nidoking" model="pokemon">
+        <field name="name">nidoking</field>
+        <field name="weight">620</field>
+        <field name="height">14</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_nidoking_sprite_back'), ref('demo_pokemon_nidoking_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground'), ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_clefairy_sprite_back" model="pokemon.sprite">
+        <field name="name">clefairy back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/clefairy_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_clefairy_sprite_front" model="pokemon.sprite">
+        <field name="name">clefairy front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/clefairy_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_clefairy" model="pokemon">
+        <field name="name">clefairy</field>
+        <field name="weight">75</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_clefairy_sprite_back'), ref('demo_pokemon_clefairy_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fairy')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_clefable_sprite_back" model="pokemon.sprite">
+        <field name="name">clefable back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/clefable_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_clefable_sprite_front" model="pokemon.sprite">
+        <field name="name">clefable front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/clefable_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_clefable" model="pokemon">
+        <field name="name">clefable</field>
+        <field name="weight">400</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_clefable_sprite_back'), ref('demo_pokemon_clefable_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fairy')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_vulpix_sprite_back" model="pokemon.sprite">
+        <field name="name">vulpix back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/vulpix_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_vulpix_sprite_front" model="pokemon.sprite">
+        <field name="name">vulpix front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/vulpix_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_vulpix" model="pokemon">
+        <field name="name">vulpix</field>
+        <field name="weight">99</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_vulpix_sprite_back'), ref('demo_pokemon_vulpix_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_ninetales_sprite_back" model="pokemon.sprite">
+        <field name="name">ninetales back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/ninetales_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ninetales_sprite_front" model="pokemon.sprite">
+        <field name="name">ninetales front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/ninetales_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ninetales" model="pokemon">
+        <field name="name">ninetales</field>
+        <field name="weight">199</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_ninetales_sprite_back'), ref('demo_pokemon_ninetales_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_jigglypuff_sprite_back" model="pokemon.sprite">
+        <field name="name">jigglypuff back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/jigglypuff_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_jigglypuff_sprite_front" model="pokemon.sprite">
+        <field name="name">jigglypuff front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/jigglypuff_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_jigglypuff" model="pokemon">
+        <field name="name">jigglypuff</field>
+        <field name="weight">55</field>
+        <field name="height">5</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_jigglypuff_sprite_back'), ref('demo_pokemon_jigglypuff_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fairy'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_wigglytuff_sprite_back" model="pokemon.sprite">
+        <field name="name">wigglytuff back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/wigglytuff_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_wigglytuff_sprite_front" model="pokemon.sprite">
+        <field name="name">wigglytuff front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/wigglytuff_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_wigglytuff" model="pokemon">
+        <field name="name">wigglytuff</field>
+        <field name="weight">120</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_wigglytuff_sprite_back'), ref('demo_pokemon_wigglytuff_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fairy'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_zubat_sprite_back" model="pokemon.sprite">
+        <field name="name">zubat back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/zubat_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_zubat_sprite_front" model="pokemon.sprite">
+        <field name="name">zubat front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/zubat_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_zubat" model="pokemon">
+        <field name="name">zubat</field>
+        <field name="weight">75</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_zubat_sprite_back'), ref('demo_pokemon_zubat_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_golbat_sprite_back" model="pokemon.sprite">
+        <field name="name">golbat back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/golbat_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_golbat_sprite_front" model="pokemon.sprite">
+        <field name="name">golbat front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/golbat_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_golbat" model="pokemon">
+        <field name="name">golbat</field>
+        <field name="weight">550</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_golbat_sprite_back'), ref('demo_pokemon_golbat_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_oddish_sprite_back" model="pokemon.sprite">
+        <field name="name">oddish back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/oddish_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_oddish_sprite_front" model="pokemon.sprite">
+        <field name="name">oddish front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/oddish_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_oddish" model="pokemon">
+        <field name="name">oddish</field>
+        <field name="weight">54</field>
+        <field name="height">5</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_oddish_sprite_back'), ref('demo_pokemon_oddish_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_gloom_sprite_back" model="pokemon.sprite">
+        <field name="name">gloom back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/gloom_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gloom_sprite_front" model="pokemon.sprite">
+        <field name="name">gloom front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/gloom_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gloom" model="pokemon">
+        <field name="name">gloom</field>
+        <field name="weight">86</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_gloom_sprite_back'), ref('demo_pokemon_gloom_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_vileplume_sprite_back" model="pokemon.sprite">
+        <field name="name">vileplume back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/vileplume_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_vileplume_sprite_front" model="pokemon.sprite">
+        <field name="name">vileplume front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/vileplume_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_vileplume" model="pokemon">
+        <field name="name">vileplume</field>
+        <field name="weight">186</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_vileplume_sprite_back'), ref('demo_pokemon_vileplume_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_paras_sprite_back" model="pokemon.sprite">
+        <field name="name">paras back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/paras_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_paras_sprite_front" model="pokemon.sprite">
+        <field name="name">paras front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/paras_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_paras" model="pokemon">
+        <field name="name">paras</field>
+        <field name="weight">54</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_paras_sprite_back'), ref('demo_pokemon_paras_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_grass'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_parasect_sprite_back" model="pokemon.sprite">
+        <field name="name">parasect back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/parasect_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_parasect_sprite_front" model="pokemon.sprite">
+        <field name="name">parasect front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/parasect_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_parasect" model="pokemon">
+        <field name="name">parasect</field>
+        <field name="weight">295</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_parasect_sprite_back'), ref('demo_pokemon_parasect_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_grass'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_venonat_sprite_back" model="pokemon.sprite">
+        <field name="name">venonat back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/venonat_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_venonat_sprite_front" model="pokemon.sprite">
+        <field name="name">venonat front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/venonat_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_venonat" model="pokemon">
+        <field name="name">venonat</field>
+        <field name="weight">300</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_venonat_sprite_back'), ref('demo_pokemon_venonat_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_venomoth_sprite_back" model="pokemon.sprite">
+        <field name="name">venomoth back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/venomoth_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_venomoth_sprite_front" model="pokemon.sprite">
+        <field name="name">venomoth front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/venomoth_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_venomoth" model="pokemon">
+        <field name="name">venomoth</field>
+        <field name="weight">125</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_venomoth_sprite_back'), ref('demo_pokemon_venomoth_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_diglett_sprite_back" model="pokemon.sprite">
+        <field name="name">diglett back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/diglett_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_diglett_sprite_front" model="pokemon.sprite">
+        <field name="name">diglett front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/diglett_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_diglett" model="pokemon">
+        <field name="name">diglett</field>
+        <field name="weight">8</field>
+        <field name="height">2</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_diglett_sprite_back'), ref('demo_pokemon_diglett_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_dugtrio_sprite_back" model="pokemon.sprite">
+        <field name="name">dugtrio back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/dugtrio_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dugtrio_sprite_front" model="pokemon.sprite">
+        <field name="name">dugtrio front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/dugtrio_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dugtrio" model="pokemon">
+        <field name="name">dugtrio</field>
+        <field name="weight">333</field>
+        <field name="height">7</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_dugtrio_sprite_back'), ref('demo_pokemon_dugtrio_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_meowth_sprite_back" model="pokemon.sprite">
+        <field name="name">meowth back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/meowth_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_meowth_sprite_front" model="pokemon.sprite">
+        <field name="name">meowth front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/meowth_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_meowth" model="pokemon">
+        <field name="name">meowth</field>
+        <field name="weight">42</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_meowth_sprite_back'), ref('demo_pokemon_meowth_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_persian_sprite_back" model="pokemon.sprite">
+        <field name="name">persian back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/persian_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_persian_sprite_front" model="pokemon.sprite">
+        <field name="name">persian front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/persian_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_persian" model="pokemon">
+        <field name="name">persian</field>
+        <field name="weight">320</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_persian_sprite_back'), ref('demo_pokemon_persian_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_psyduck_sprite_back" model="pokemon.sprite">
+        <field name="name">psyduck back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/psyduck_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_psyduck_sprite_front" model="pokemon.sprite">
+        <field name="name">psyduck front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/psyduck_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_psyduck" model="pokemon">
+        <field name="name">psyduck</field>
+        <field name="weight">196</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_psyduck_sprite_back'), ref('demo_pokemon_psyduck_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_golduck_sprite_back" model="pokemon.sprite">
+        <field name="name">golduck back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/golduck_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_golduck_sprite_front" model="pokemon.sprite">
+        <field name="name">golduck front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/golduck_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_golduck" model="pokemon">
+        <field name="name">golduck</field>
+        <field name="weight">766</field>
+        <field name="height">17</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_golduck_sprite_back'), ref('demo_pokemon_golduck_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_mankey_sprite_back" model="pokemon.sprite">
+        <field name="name">mankey back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/mankey_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_mankey_sprite_front" model="pokemon.sprite">
+        <field name="name">mankey front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/mankey_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_mankey" model="pokemon">
+        <field name="name">mankey</field>
+        <field name="weight">280</field>
+        <field name="height">5</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_mankey_sprite_back'), ref('demo_pokemon_mankey_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_primeape_sprite_back" model="pokemon.sprite">
+        <field name="name">primeape back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/primeape_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_primeape_sprite_front" model="pokemon.sprite">
+        <field name="name">primeape front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/primeape_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_primeape" model="pokemon">
+        <field name="name">primeape</field>
+        <field name="weight">320</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_primeape_sprite_back'), ref('demo_pokemon_primeape_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_growlithe_sprite_back" model="pokemon.sprite">
+        <field name="name">growlithe back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/growlithe_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_growlithe_sprite_front" model="pokemon.sprite">
+        <field name="name">growlithe front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/growlithe_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_growlithe" model="pokemon">
+        <field name="name">growlithe</field>
+        <field name="weight">190</field>
+        <field name="height">7</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_growlithe_sprite_back'), ref('demo_pokemon_growlithe_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_arcanine_sprite_back" model="pokemon.sprite">
+        <field name="name">arcanine back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/arcanine_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_arcanine_sprite_front" model="pokemon.sprite">
+        <field name="name">arcanine front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/arcanine_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_arcanine" model="pokemon">
+        <field name="name">arcanine</field>
+        <field name="weight">1550</field>
+        <field name="height">19</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_arcanine_sprite_back'), ref('demo_pokemon_arcanine_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_poliwag_sprite_back" model="pokemon.sprite">
+        <field name="name">poliwag back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/poliwag_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_poliwag_sprite_front" model="pokemon.sprite">
+        <field name="name">poliwag front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/poliwag_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_poliwag" model="pokemon">
+        <field name="name">poliwag</field>
+        <field name="weight">124</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_poliwag_sprite_back'), ref('demo_pokemon_poliwag_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_poliwhirl_sprite_back" model="pokemon.sprite">
+        <field name="name">poliwhirl back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/poliwhirl_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_poliwhirl_sprite_front" model="pokemon.sprite">
+        <field name="name">poliwhirl front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/poliwhirl_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_poliwhirl" model="pokemon">
+        <field name="name">poliwhirl</field>
+        <field name="weight">200</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_poliwhirl_sprite_back'), ref('demo_pokemon_poliwhirl_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_poliwrath_sprite_back" model="pokemon.sprite">
+        <field name="name">poliwrath back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/poliwrath_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_poliwrath_sprite_front" model="pokemon.sprite">
+        <field name="name">poliwrath front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/poliwrath_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_poliwrath" model="pokemon">
+        <field name="name">poliwrath</field>
+        <field name="weight">540</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_poliwrath_sprite_back'), ref('demo_pokemon_poliwrath_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_abra_sprite_back" model="pokemon.sprite">
+        <field name="name">abra back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/abra_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_abra_sprite_front" model="pokemon.sprite">
+        <field name="name">abra front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/abra_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_abra" model="pokemon">
+        <field name="name">abra</field>
+        <field name="weight">195</field>
+        <field name="height">9</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_abra_sprite_back'), ref('demo_pokemon_abra_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_kadabra_sprite_back" model="pokemon.sprite">
+        <field name="name">kadabra back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/kadabra_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kadabra_sprite_front" model="pokemon.sprite">
+        <field name="name">kadabra front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/kadabra_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kadabra" model="pokemon">
+        <field name="name">kadabra</field>
+        <field name="weight">565</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_kadabra_sprite_back'), ref('demo_pokemon_kadabra_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_alakazam_sprite_back" model="pokemon.sprite">
+        <field name="name">alakazam back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/alakazam_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_alakazam_sprite_front" model="pokemon.sprite">
+        <field name="name">alakazam front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/alakazam_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_alakazam" model="pokemon">
+        <field name="name">alakazam</field>
+        <field name="weight">480</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_alakazam_sprite_back'), ref('demo_pokemon_alakazam_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_machop_sprite_back" model="pokemon.sprite">
+        <field name="name">machop back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/machop_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_machop_sprite_front" model="pokemon.sprite">
+        <field name="name">machop front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/machop_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_machop" model="pokemon">
+        <field name="name">machop</field>
+        <field name="weight">195</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_machop_sprite_back'), ref('demo_pokemon_machop_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_machoke_sprite_back" model="pokemon.sprite">
+        <field name="name">machoke back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/machoke_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_machoke_sprite_front" model="pokemon.sprite">
+        <field name="name">machoke front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/machoke_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_machoke" model="pokemon">
+        <field name="name">machoke</field>
+        <field name="weight">705</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_machoke_sprite_back'), ref('demo_pokemon_machoke_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_machamp_sprite_back" model="pokemon.sprite">
+        <field name="name">machamp back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/machamp_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_machamp_sprite_front" model="pokemon.sprite">
+        <field name="name">machamp front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/machamp_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_machamp" model="pokemon">
+        <field name="name">machamp</field>
+        <field name="weight">1300</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_machamp_sprite_back'), ref('demo_pokemon_machamp_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_bellsprout_sprite_back" model="pokemon.sprite">
+        <field name="name">bellsprout back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/bellsprout_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_bellsprout_sprite_front" model="pokemon.sprite">
+        <field name="name">bellsprout front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/bellsprout_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_bellsprout" model="pokemon">
+        <field name="name">bellsprout</field>
+        <field name="weight">40</field>
+        <field name="height">7</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_bellsprout_sprite_back'), ref('demo_pokemon_bellsprout_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_weepinbell_sprite_back" model="pokemon.sprite">
+        <field name="name">weepinbell back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/weepinbell_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_weepinbell_sprite_front" model="pokemon.sprite">
+        <field name="name">weepinbell front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/weepinbell_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_weepinbell" model="pokemon">
+        <field name="name">weepinbell</field>
+        <field name="weight">64</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_weepinbell_sprite_back'), ref('demo_pokemon_weepinbell_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_victreebel_sprite_back" model="pokemon.sprite">
+        <field name="name">victreebel back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/victreebel_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_victreebel_sprite_front" model="pokemon.sprite">
+        <field name="name">victreebel front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/victreebel_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_victreebel" model="pokemon">
+        <field name="name">victreebel</field>
+        <field name="weight">155</field>
+        <field name="height">17</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_victreebel_sprite_back'), ref('demo_pokemon_victreebel_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_tentacool_sprite_back" model="pokemon.sprite">
+        <field name="name">tentacool back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/tentacool_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tentacool_sprite_front" model="pokemon.sprite">
+        <field name="name">tentacool front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/tentacool_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tentacool" model="pokemon">
+        <field name="name">tentacool</field>
+        <field name="weight">455</field>
+        <field name="height">9</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_tentacool_sprite_back'), ref('demo_pokemon_tentacool_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_tentacruel_sprite_back" model="pokemon.sprite">
+        <field name="name">tentacruel back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/tentacruel_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tentacruel_sprite_front" model="pokemon.sprite">
+        <field name="name">tentacruel front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/tentacruel_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tentacruel" model="pokemon">
+        <field name="name">tentacruel</field>
+        <field name="weight">550</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_tentacruel_sprite_back'), ref('demo_pokemon_tentacruel_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_geodude_sprite_back" model="pokemon.sprite">
+        <field name="name">geodude back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/geodude_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_geodude_sprite_front" model="pokemon.sprite">
+        <field name="name">geodude front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/geodude_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_geodude" model="pokemon">
+        <field name="name">geodude</field>
+        <field name="weight">200</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_geodude_sprite_back'), ref('demo_pokemon_geodude_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_graveler_sprite_back" model="pokemon.sprite">
+        <field name="name">graveler back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/graveler_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_graveler_sprite_front" model="pokemon.sprite">
+        <field name="name">graveler front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/graveler_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_graveler" model="pokemon">
+        <field name="name">graveler</field>
+        <field name="weight">1050</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_graveler_sprite_back'), ref('demo_pokemon_graveler_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_golem_sprite_back" model="pokemon.sprite">
+        <field name="name">golem back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/golem_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_golem_sprite_front" model="pokemon.sprite">
+        <field name="name">golem front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/golem_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_golem" model="pokemon">
+        <field name="name">golem</field>
+        <field name="weight">3000</field>
+        <field name="height">14</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_golem_sprite_back'), ref('demo_pokemon_golem_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_ponyta_sprite_back" model="pokemon.sprite">
+        <field name="name">ponyta back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/ponyta_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ponyta_sprite_front" model="pokemon.sprite">
+        <field name="name">ponyta front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/ponyta_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ponyta" model="pokemon">
+        <field name="name">ponyta</field>
+        <field name="weight">300</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_ponyta_sprite_back'), ref('demo_pokemon_ponyta_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_rapidash_sprite_back" model="pokemon.sprite">
+        <field name="name">rapidash back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/rapidash_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rapidash_sprite_front" model="pokemon.sprite">
+        <field name="name">rapidash front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/rapidash_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rapidash" model="pokemon">
+        <field name="name">rapidash</field>
+        <field name="weight">950</field>
+        <field name="height">17</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_rapidash_sprite_back'), ref('demo_pokemon_rapidash_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_slowpoke_sprite_back" model="pokemon.sprite">
+        <field name="name">slowpoke back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/slowpoke_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_slowpoke_sprite_front" model="pokemon.sprite">
+        <field name="name">slowpoke front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/slowpoke_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_slowpoke" model="pokemon">
+        <field name="name">slowpoke</field>
+        <field name="weight">360</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_slowpoke_sprite_back'), ref('demo_pokemon_slowpoke_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_slowbro_sprite_back" model="pokemon.sprite">
+        <field name="name">slowbro back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/slowbro_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_slowbro_sprite_front" model="pokemon.sprite">
+        <field name="name">slowbro front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/slowbro_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_slowbro" model="pokemon">
+        <field name="name">slowbro</field>
+        <field name="weight">785</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_slowbro_sprite_back'), ref('demo_pokemon_slowbro_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_magnemite_sprite_back" model="pokemon.sprite">
+        <field name="name">magnemite back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/magnemite_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magnemite_sprite_front" model="pokemon.sprite">
+        <field name="name">magnemite front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/magnemite_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magnemite" model="pokemon">
+        <field name="name">magnemite</field>
+        <field name="weight">60</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_magnemite_sprite_back'), ref('demo_pokemon_magnemite_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_steel'), ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_magneton_sprite_back" model="pokemon.sprite">
+        <field name="name">magneton back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/magneton_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magneton_sprite_front" model="pokemon.sprite">
+        <field name="name">magneton front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/magneton_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magneton" model="pokemon">
+        <field name="name">magneton</field>
+        <field name="weight">600</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_magneton_sprite_back'), ref('demo_pokemon_magneton_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_steel'), ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_farfetchd_sprite_back" model="pokemon.sprite">
+        <field name="name">farfetchd back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/farfetchd_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_farfetchd_sprite_front" model="pokemon.sprite">
+        <field name="name">farfetchd front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/farfetchd_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_farfetchd" model="pokemon">
+        <field name="name">farfetchd</field>
+        <field name="weight">150</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_farfetchd_sprite_back'), ref('demo_pokemon_farfetchd_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_doduo_sprite_back" model="pokemon.sprite">
+        <field name="name">doduo back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/doduo_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_doduo_sprite_front" model="pokemon.sprite">
+        <field name="name">doduo front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/doduo_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_doduo" model="pokemon">
+        <field name="name">doduo</field>
+        <field name="weight">392</field>
+        <field name="height">14</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_doduo_sprite_back'), ref('demo_pokemon_doduo_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_dodrio_sprite_back" model="pokemon.sprite">
+        <field name="name">dodrio back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/dodrio_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dodrio_sprite_front" model="pokemon.sprite">
+        <field name="name">dodrio front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/dodrio_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dodrio" model="pokemon">
+        <field name="name">dodrio</field>
+        <field name="weight">852</field>
+        <field name="height">18</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_dodrio_sprite_back'), ref('demo_pokemon_dodrio_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_seel_sprite_back" model="pokemon.sprite">
+        <field name="name">seel back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/seel_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_seel_sprite_front" model="pokemon.sprite">
+        <field name="name">seel front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/seel_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_seel" model="pokemon">
+        <field name="name">seel</field>
+        <field name="weight">900</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_seel_sprite_back'), ref('demo_pokemon_seel_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_dewgong_sprite_back" model="pokemon.sprite">
+        <field name="name">dewgong back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/dewgong_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dewgong_sprite_front" model="pokemon.sprite">
+        <field name="name">dewgong front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/dewgong_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dewgong" model="pokemon">
+        <field name="name">dewgong</field>
+        <field name="weight">1200</field>
+        <field name="height">17</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_dewgong_sprite_back'), ref('demo_pokemon_dewgong_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ice'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_grimer_sprite_back" model="pokemon.sprite">
+        <field name="name">grimer back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/grimer_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_grimer_sprite_front" model="pokemon.sprite">
+        <field name="name">grimer front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/grimer_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_grimer" model="pokemon">
+        <field name="name">grimer</field>
+        <field name="weight">300</field>
+        <field name="height">9</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_grimer_sprite_back'), ref('demo_pokemon_grimer_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_muk_sprite_back" model="pokemon.sprite">
+        <field name="name">muk back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/muk_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_muk_sprite_front" model="pokemon.sprite">
+        <field name="name">muk front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/muk_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_muk" model="pokemon">
+        <field name="name">muk</field>
+        <field name="weight">300</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_muk_sprite_back'), ref('demo_pokemon_muk_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_shellder_sprite_back" model="pokemon.sprite">
+        <field name="name">shellder back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/shellder_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_shellder_sprite_front" model="pokemon.sprite">
+        <field name="name">shellder front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/shellder_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_shellder" model="pokemon">
+        <field name="name">shellder</field>
+        <field name="weight">40</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_shellder_sprite_back'), ref('demo_pokemon_shellder_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_cloyster_sprite_back" model="pokemon.sprite">
+        <field name="name">cloyster back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/cloyster_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_cloyster_sprite_front" model="pokemon.sprite">
+        <field name="name">cloyster front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/cloyster_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_cloyster" model="pokemon">
+        <field name="name">cloyster</field>
+        <field name="weight">1325</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_cloyster_sprite_back'), ref('demo_pokemon_cloyster_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ice'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_gastly_sprite_back" model="pokemon.sprite">
+        <field name="name">gastly back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/gastly_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gastly_sprite_front" model="pokemon.sprite">
+        <field name="name">gastly front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/gastly_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gastly" model="pokemon">
+        <field name="name">gastly</field>
+        <field name="weight">1</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_gastly_sprite_back'), ref('demo_pokemon_gastly_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_ghost')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_haunter_sprite_back" model="pokemon.sprite">
+        <field name="name">haunter back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/haunter_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_haunter_sprite_front" model="pokemon.sprite">
+        <field name="name">haunter front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/haunter_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_haunter" model="pokemon">
+        <field name="name">haunter</field>
+        <field name="weight">1</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_haunter_sprite_back'), ref('demo_pokemon_haunter_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_ghost')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_gengar_sprite_back" model="pokemon.sprite">
+        <field name="name">gengar back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/gengar_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gengar_sprite_front" model="pokemon.sprite">
+        <field name="name">gengar front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/gengar_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gengar" model="pokemon">
+        <field name="name">gengar</field>
+        <field name="weight">405</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_gengar_sprite_back'), ref('demo_pokemon_gengar_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison'), ref('pokemon_type_ghost')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_onix_sprite_back" model="pokemon.sprite">
+        <field name="name">onix back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/onix_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_onix_sprite_front" model="pokemon.sprite">
+        <field name="name">onix front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/onix_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_onix" model="pokemon">
+        <field name="name">onix</field>
+        <field name="weight">2100</field>
+        <field name="height">88</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_onix_sprite_back'), ref('demo_pokemon_onix_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_drowzee_sprite_back" model="pokemon.sprite">
+        <field name="name">drowzee back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/drowzee_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_drowzee_sprite_front" model="pokemon.sprite">
+        <field name="name">drowzee front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/drowzee_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_drowzee" model="pokemon">
+        <field name="name">drowzee</field>
+        <field name="weight">324</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_drowzee_sprite_back'), ref('demo_pokemon_drowzee_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_hypno_sprite_back" model="pokemon.sprite">
+        <field name="name">hypno back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/hypno_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_hypno_sprite_front" model="pokemon.sprite">
+        <field name="name">hypno front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/hypno_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_hypno" model="pokemon">
+        <field name="name">hypno</field>
+        <field name="weight">756</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_hypno_sprite_back'), ref('demo_pokemon_hypno_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_krabby_sprite_back" model="pokemon.sprite">
+        <field name="name">krabby back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/krabby_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_krabby_sprite_front" model="pokemon.sprite">
+        <field name="name">krabby front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/krabby_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_krabby" model="pokemon">
+        <field name="name">krabby</field>
+        <field name="weight">65</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_krabby_sprite_back'), ref('demo_pokemon_krabby_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_kingler_sprite_back" model="pokemon.sprite">
+        <field name="name">kingler back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/kingler_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kingler_sprite_front" model="pokemon.sprite">
+        <field name="name">kingler front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/kingler_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kingler" model="pokemon">
+        <field name="name">kingler</field>
+        <field name="weight">600</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_kingler_sprite_back'), ref('demo_pokemon_kingler_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_voltorb_sprite_back" model="pokemon.sprite">
+        <field name="name">voltorb back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/voltorb_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_voltorb_sprite_front" model="pokemon.sprite">
+        <field name="name">voltorb front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/voltorb_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_voltorb" model="pokemon">
+        <field name="name">voltorb</field>
+        <field name="weight">104</field>
+        <field name="height">5</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_voltorb_sprite_back'), ref('demo_pokemon_voltorb_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_electrode_sprite_back" model="pokemon.sprite">
+        <field name="name">electrode back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/electrode_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_electrode_sprite_front" model="pokemon.sprite">
+        <field name="name">electrode front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/electrode_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_electrode" model="pokemon">
+        <field name="name">electrode</field>
+        <field name="weight">666</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_electrode_sprite_back'), ref('demo_pokemon_electrode_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_exeggcute_sprite_back" model="pokemon.sprite">
+        <field name="name">exeggcute back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/exeggcute_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_exeggcute_sprite_front" model="pokemon.sprite">
+        <field name="name">exeggcute front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/exeggcute_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_exeggcute" model="pokemon">
+        <field name="name">exeggcute</field>
+        <field name="weight">25</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_exeggcute_sprite_back'), ref('demo_pokemon_exeggcute_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_exeggutor_sprite_back" model="pokemon.sprite">
+        <field name="name">exeggutor back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/exeggutor_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_exeggutor_sprite_front" model="pokemon.sprite">
+        <field name="name">exeggutor front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/exeggutor_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_exeggutor" model="pokemon">
+        <field name="name">exeggutor</field>
+        <field name="weight">1200</field>
+        <field name="height">20</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_exeggutor_sprite_back'), ref('demo_pokemon_exeggutor_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic'), ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_cubone_sprite_back" model="pokemon.sprite">
+        <field name="name">cubone back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/cubone_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_cubone_sprite_front" model="pokemon.sprite">
+        <field name="name">cubone front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/cubone_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_cubone" model="pokemon">
+        <field name="name">cubone</field>
+        <field name="weight">65</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_cubone_sprite_back'), ref('demo_pokemon_cubone_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_marowak_sprite_back" model="pokemon.sprite">
+        <field name="name">marowak back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/marowak_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_marowak_sprite_front" model="pokemon.sprite">
+        <field name="name">marowak front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/marowak_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_marowak" model="pokemon">
+        <field name="name">marowak</field>
+        <field name="weight">450</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_marowak_sprite_back'), ref('demo_pokemon_marowak_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_hitmonlee_sprite_back" model="pokemon.sprite">
+        <field name="name">hitmonlee back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/hitmonlee_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_hitmonlee_sprite_front" model="pokemon.sprite">
+        <field name="name">hitmonlee front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/hitmonlee_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_hitmonlee" model="pokemon">
+        <field name="name">hitmonlee</field>
+        <field name="weight">498</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_hitmonlee_sprite_back'), ref('demo_pokemon_hitmonlee_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_hitmonchan_sprite_back" model="pokemon.sprite">
+        <field name="name">hitmonchan back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/hitmonchan_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_hitmonchan_sprite_front" model="pokemon.sprite">
+        <field name="name">hitmonchan front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/hitmonchan_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_hitmonchan" model="pokemon">
+        <field name="name">hitmonchan</field>
+        <field name="weight">502</field>
+        <field name="height">14</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_hitmonchan_sprite_back'), ref('demo_pokemon_hitmonchan_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fighting')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_lickitung_sprite_back" model="pokemon.sprite">
+        <field name="name">lickitung back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/lickitung_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_lickitung_sprite_front" model="pokemon.sprite">
+        <field name="name">lickitung front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/lickitung_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_lickitung" model="pokemon">
+        <field name="name">lickitung</field>
+        <field name="weight">655</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_lickitung_sprite_back'), ref('demo_pokemon_lickitung_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_koffing_sprite_back" model="pokemon.sprite">
+        <field name="name">koffing back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/koffing_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_koffing_sprite_front" model="pokemon.sprite">
+        <field name="name">koffing front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/koffing_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_koffing" model="pokemon">
+        <field name="name">koffing</field>
+        <field name="weight">10</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_koffing_sprite_back'), ref('demo_pokemon_koffing_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_weezing_sprite_back" model="pokemon.sprite">
+        <field name="name">weezing back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/weezing_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_weezing_sprite_front" model="pokemon.sprite">
+        <field name="name">weezing front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/weezing_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_weezing" model="pokemon">
+        <field name="name">weezing</field>
+        <field name="weight">95</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_weezing_sprite_back'), ref('demo_pokemon_weezing_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_poison')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_rhyhorn_sprite_back" model="pokemon.sprite">
+        <field name="name">rhyhorn back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/rhyhorn_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rhyhorn_sprite_front" model="pokemon.sprite">
+        <field name="name">rhyhorn front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/rhyhorn_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rhyhorn" model="pokemon">
+        <field name="name">rhyhorn</field>
+        <field name="weight">1150</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_rhyhorn_sprite_back'), ref('demo_pokemon_rhyhorn_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_rock'), ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_rhydon_sprite_back" model="pokemon.sprite">
+        <field name="name">rhydon back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/rhydon_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rhydon_sprite_front" model="pokemon.sprite">
+        <field name="name">rhydon front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/rhydon_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_rhydon" model="pokemon">
+        <field name="name">rhydon</field>
+        <field name="weight">1200</field>
+        <field name="height">19</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_rhydon_sprite_back'), ref('demo_pokemon_rhydon_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_rock'), ref('pokemon_type_ground')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_chansey_sprite_back" model="pokemon.sprite">
+        <field name="name">chansey back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/chansey_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_chansey_sprite_front" model="pokemon.sprite">
+        <field name="name">chansey front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/chansey_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_chansey" model="pokemon">
+        <field name="name">chansey</field>
+        <field name="weight">346</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_chansey_sprite_back'), ref('demo_pokemon_chansey_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_tangela_sprite_back" model="pokemon.sprite">
+        <field name="name">tangela back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/tangela_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tangela_sprite_front" model="pokemon.sprite">
+        <field name="name">tangela front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/tangela_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tangela" model="pokemon">
+        <field name="name">tangela</field>
+        <field name="weight">350</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_tangela_sprite_back'), ref('demo_pokemon_tangela_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_grass')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_kangaskhan_sprite_back" model="pokemon.sprite">
+        <field name="name">kangaskhan back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/kangaskhan_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kangaskhan_sprite_front" model="pokemon.sprite">
+        <field name="name">kangaskhan front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/kangaskhan_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kangaskhan" model="pokemon">
+        <field name="name">kangaskhan</field>
+        <field name="weight">800</field>
+        <field name="height">22</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_kangaskhan_sprite_back'), ref('demo_pokemon_kangaskhan_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_horsea_sprite_back" model="pokemon.sprite">
+        <field name="name">horsea back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/horsea_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_horsea_sprite_front" model="pokemon.sprite">
+        <field name="name">horsea front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/horsea_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_horsea" model="pokemon">
+        <field name="name">horsea</field>
+        <field name="weight">80</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_horsea_sprite_back'), ref('demo_pokemon_horsea_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_seadra_sprite_back" model="pokemon.sprite">
+        <field name="name">seadra back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/seadra_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_seadra_sprite_front" model="pokemon.sprite">
+        <field name="name">seadra front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/seadra_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_seadra" model="pokemon">
+        <field name="name">seadra</field>
+        <field name="weight">250</field>
+        <field name="height">12</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_seadra_sprite_back'), ref('demo_pokemon_seadra_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_goldeen_sprite_back" model="pokemon.sprite">
+        <field name="name">goldeen back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/goldeen_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_goldeen_sprite_front" model="pokemon.sprite">
+        <field name="name">goldeen front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/goldeen_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_goldeen" model="pokemon">
+        <field name="name">goldeen</field>
+        <field name="weight">150</field>
+        <field name="height">6</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_goldeen_sprite_back'), ref('demo_pokemon_goldeen_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_seaking_sprite_back" model="pokemon.sprite">
+        <field name="name">seaking back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/seaking_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_seaking_sprite_front" model="pokemon.sprite">
+        <field name="name">seaking front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/seaking_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_seaking" model="pokemon">
+        <field name="name">seaking</field>
+        <field name="weight">390</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_seaking_sprite_back'), ref('demo_pokemon_seaking_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_staryu_sprite_back" model="pokemon.sprite">
+        <field name="name">staryu back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/staryu_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_staryu_sprite_front" model="pokemon.sprite">
+        <field name="name">staryu front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/staryu_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_staryu" model="pokemon">
+        <field name="name">staryu</field>
+        <field name="weight">345</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_staryu_sprite_back'), ref('demo_pokemon_staryu_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_starmie_sprite_back" model="pokemon.sprite">
+        <field name="name">starmie back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/starmie_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_starmie_sprite_front" model="pokemon.sprite">
+        <field name="name">starmie front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/starmie_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_starmie" model="pokemon">
+        <field name="name">starmie</field>
+        <field name="weight">800</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_starmie_sprite_back'), ref('demo_pokemon_starmie_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_mr-mime_sprite_back" model="pokemon.sprite">
+        <field name="name">mr-mime back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/mr-mime_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_mr-mime_sprite_front" model="pokemon.sprite">
+        <field name="name">mr-mime front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/mr-mime_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_mr-mime" model="pokemon">
+        <field name="name">mr-mime</field>
+        <field name="weight">545</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_mr-mime_sprite_back'), ref('demo_pokemon_mr-mime_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fairy'), ref('pokemon_type_psychic')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_scyther_sprite_back" model="pokemon.sprite">
+        <field name="name">scyther back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/scyther_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_scyther_sprite_front" model="pokemon.sprite">
+        <field name="name">scyther front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/scyther_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_scyther" model="pokemon">
+        <field name="name">scyther</field>
+        <field name="weight">560</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_scyther_sprite_back'), ref('demo_pokemon_scyther_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_jynx_sprite_back" model="pokemon.sprite">
+        <field name="name">jynx back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/jynx_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_jynx_sprite_front" model="pokemon.sprite">
+        <field name="name">jynx front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/jynx_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_jynx" model="pokemon">
+        <field name="name">jynx</field>
+        <field name="weight">406</field>
+        <field name="height">14</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_jynx_sprite_back'), ref('demo_pokemon_jynx_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic'), ref('pokemon_type_ice')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_electabuzz_sprite_back" model="pokemon.sprite">
+        <field name="name">electabuzz back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/electabuzz_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_electabuzz_sprite_front" model="pokemon.sprite">
+        <field name="name">electabuzz front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/electabuzz_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_electabuzz" model="pokemon">
+        <field name="name">electabuzz</field>
+        <field name="weight">300</field>
+        <field name="height">11</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_electabuzz_sprite_back'), ref('demo_pokemon_electabuzz_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_magmar_sprite_back" model="pokemon.sprite">
+        <field name="name">magmar back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/magmar_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magmar_sprite_front" model="pokemon.sprite">
+        <field name="name">magmar front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/magmar_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magmar" model="pokemon">
+        <field name="name">magmar</field>
+        <field name="weight">445</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_magmar_sprite_back'), ref('demo_pokemon_magmar_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_pinsir_sprite_back" model="pokemon.sprite">
+        <field name="name">pinsir back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/pinsir_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pinsir_sprite_front" model="pokemon.sprite">
+        <field name="name">pinsir front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/pinsir_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_pinsir" model="pokemon">
+        <field name="name">pinsir</field>
+        <field name="weight">550</field>
+        <field name="height">15</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_pinsir_sprite_back'), ref('demo_pokemon_pinsir_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_bug')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_tauros_sprite_back" model="pokemon.sprite">
+        <field name="name">tauros back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/tauros_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tauros_sprite_front" model="pokemon.sprite">
+        <field name="name">tauros front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/tauros_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_tauros" model="pokemon">
+        <field name="name">tauros</field>
+        <field name="weight">884</field>
+        <field name="height">14</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_tauros_sprite_back'), ref('demo_pokemon_tauros_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_magikarp_sprite_back" model="pokemon.sprite">
+        <field name="name">magikarp back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/magikarp_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magikarp_sprite_front" model="pokemon.sprite">
+        <field name="name">magikarp front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/magikarp_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_magikarp" model="pokemon">
+        <field name="name">magikarp</field>
+        <field name="weight">100</field>
+        <field name="height">9</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_magikarp_sprite_back'), ref('demo_pokemon_magikarp_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_gyarados_sprite_back" model="pokemon.sprite">
+        <field name="name">gyarados back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/gyarados_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gyarados_sprite_front" model="pokemon.sprite">
+        <field name="name">gyarados front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/gyarados_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_gyarados" model="pokemon">
+        <field name="name">gyarados</field>
+        <field name="weight">2350</field>
+        <field name="height">65</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_gyarados_sprite_back'), ref('demo_pokemon_gyarados_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_lapras_sprite_back" model="pokemon.sprite">
+        <field name="name">lapras back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/lapras_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_lapras_sprite_front" model="pokemon.sprite">
+        <field name="name">lapras front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/lapras_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_lapras" model="pokemon">
+        <field name="name">lapras</field>
+        <field name="weight">2200</field>
+        <field name="height">25</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_lapras_sprite_back'), ref('demo_pokemon_lapras_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_ice'), ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_ditto_sprite_back" model="pokemon.sprite">
+        <field name="name">ditto back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/ditto_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ditto_sprite_front" model="pokemon.sprite">
+        <field name="name">ditto front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/ditto_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_ditto" model="pokemon">
+        <field name="name">ditto</field>
+        <field name="weight">40</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_ditto_sprite_back'), ref('demo_pokemon_ditto_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_eevee_sprite_back" model="pokemon.sprite">
+        <field name="name">eevee back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/eevee_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_eevee_sprite_front" model="pokemon.sprite">
+        <field name="name">eevee front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/eevee_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_eevee" model="pokemon">
+        <field name="name">eevee</field>
+        <field name="weight">65</field>
+        <field name="height">3</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_eevee_sprite_back'), ref('demo_pokemon_eevee_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_vaporeon_sprite_back" model="pokemon.sprite">
+        <field name="name">vaporeon back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/vaporeon_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_vaporeon_sprite_front" model="pokemon.sprite">
+        <field name="name">vaporeon front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/vaporeon_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_vaporeon" model="pokemon">
+        <field name="name">vaporeon</field>
+        <field name="weight">290</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_vaporeon_sprite_back'), ref('demo_pokemon_vaporeon_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_jolteon_sprite_back" model="pokemon.sprite">
+        <field name="name">jolteon back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/jolteon_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_jolteon_sprite_front" model="pokemon.sprite">
+        <field name="name">jolteon front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/jolteon_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_jolteon" model="pokemon">
+        <field name="name">jolteon</field>
+        <field name="weight">245</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_jolteon_sprite_back'), ref('demo_pokemon_jolteon_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_flareon_sprite_back" model="pokemon.sprite">
+        <field name="name">flareon back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/flareon_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_flareon_sprite_front" model="pokemon.sprite">
+        <field name="name">flareon front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/flareon_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_flareon" model="pokemon">
+        <field name="name">flareon</field>
+        <field name="weight">250</field>
+        <field name="height">9</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_flareon_sprite_back'), ref('demo_pokemon_flareon_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_porygon_sprite_back" model="pokemon.sprite">
+        <field name="name">porygon back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/porygon_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_porygon_sprite_front" model="pokemon.sprite">
+        <field name="name">porygon front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/porygon_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_porygon" model="pokemon">
+        <field name="name">porygon</field>
+        <field name="weight">365</field>
+        <field name="height">8</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_porygon_sprite_back'), ref('demo_pokemon_porygon_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_omanyte_sprite_back" model="pokemon.sprite">
+        <field name="name">omanyte back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/omanyte_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_omanyte_sprite_front" model="pokemon.sprite">
+        <field name="name">omanyte front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/omanyte_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_omanyte" model="pokemon">
+        <field name="name">omanyte</field>
+        <field name="weight">75</field>
+        <field name="height">4</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_omanyte_sprite_back'), ref('demo_pokemon_omanyte_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_omastar_sprite_back" model="pokemon.sprite">
+        <field name="name">omastar back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/omastar_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_omastar_sprite_front" model="pokemon.sprite">
+        <field name="name">omastar front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/omastar_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_omastar" model="pokemon">
+        <field name="name">omastar</field>
+        <field name="weight">350</field>
+        <field name="height">10</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_omastar_sprite_back'), ref('demo_pokemon_omastar_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_kabuto_sprite_back" model="pokemon.sprite">
+        <field name="name">kabuto back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/kabuto_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kabuto_sprite_front" model="pokemon.sprite">
+        <field name="name">kabuto front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/kabuto_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kabuto" model="pokemon">
+        <field name="name">kabuto</field>
+        <field name="weight">115</field>
+        <field name="height">5</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_kabuto_sprite_back'), ref('demo_pokemon_kabuto_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_kabutops_sprite_back" model="pokemon.sprite">
+        <field name="name">kabutops back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/kabutops_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kabutops_sprite_front" model="pokemon.sprite">
+        <field name="name">kabutops front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/kabutops_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_kabutops" model="pokemon">
+        <field name="name">kabutops</field>
+        <field name="weight">405</field>
+        <field name="height">13</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_kabutops_sprite_back'), ref('demo_pokemon_kabutops_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_water'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_aerodactyl_sprite_back" model="pokemon.sprite">
+        <field name="name">aerodactyl back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/aerodactyl_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_aerodactyl_sprite_front" model="pokemon.sprite">
+        <field name="name">aerodactyl front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/aerodactyl_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_aerodactyl" model="pokemon">
+        <field name="name">aerodactyl</field>
+        <field name="weight">590</field>
+        <field name="height">18</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_aerodactyl_sprite_back'), ref('demo_pokemon_aerodactyl_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_rock')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_snorlax_sprite_back" model="pokemon.sprite">
+        <field name="name">snorlax back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/snorlax_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_snorlax_sprite_front" model="pokemon.sprite">
+        <field name="name">snorlax front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/snorlax_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_snorlax" model="pokemon">
+        <field name="name">snorlax</field>
+        <field name="weight">4600</field>
+        <field name="height">21</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_snorlax_sprite_back'), ref('demo_pokemon_snorlax_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_normal')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_articuno_sprite_back" model="pokemon.sprite">
+        <field name="name">articuno back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/articuno_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_articuno_sprite_front" model="pokemon.sprite">
+        <field name="name">articuno front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/articuno_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_articuno" model="pokemon">
+        <field name="name">articuno</field>
+        <field name="weight">554</field>
+        <field name="height">17</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_articuno_sprite_back'), ref('demo_pokemon_articuno_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_ice')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_zapdos_sprite_back" model="pokemon.sprite">
+        <field name="name">zapdos back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/zapdos_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_zapdos_sprite_front" model="pokemon.sprite">
+        <field name="name">zapdos front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/zapdos_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_zapdos" model="pokemon">
+        <field name="name">zapdos</field>
+        <field name="weight">526</field>
+        <field name="height">16</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_zapdos_sprite_back'), ref('demo_pokemon_zapdos_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_electric')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_moltres_sprite_back" model="pokemon.sprite">
+        <field name="name">moltres back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/moltres_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_moltres_sprite_front" model="pokemon.sprite">
+        <field name="name">moltres front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/moltres_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_moltres" model="pokemon">
+        <field name="name">moltres</field>
+        <field name="weight">600</field>
+        <field name="height">20</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_moltres_sprite_back'), ref('demo_pokemon_moltres_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_fire')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_dratini_sprite_back" model="pokemon.sprite">
+        <field name="name">dratini back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/dratini_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dratini_sprite_front" model="pokemon.sprite">
+        <field name="name">dratini front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/dratini_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dratini" model="pokemon">
+        <field name="name">dratini</field>
+        <field name="weight">33</field>
+        <field name="height">18</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_dratini_sprite_back'), ref('demo_pokemon_dratini_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_dragon')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_dragonair_sprite_back" model="pokemon.sprite">
+        <field name="name">dragonair back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/dragonair_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dragonair_sprite_front" model="pokemon.sprite">
+        <field name="name">dragonair front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/dragonair_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dragonair" model="pokemon">
+        <field name="name">dragonair</field>
+        <field name="weight">165</field>
+        <field name="height">40</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_dragonair_sprite_back'), ref('demo_pokemon_dragonair_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_dragon')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_dragonite_sprite_back" model="pokemon.sprite">
+        <field name="name">dragonite back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/dragonite_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dragonite_sprite_front" model="pokemon.sprite">
+        <field name="name">dragonite front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/dragonite_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_dragonite" model="pokemon">
+        <field name="name">dragonite</field>
+        <field name="weight">2100</field>
+        <field name="height">22</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_dragonite_sprite_back'), ref('demo_pokemon_dragonite_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_flying'), ref('pokemon_type_dragon')] )]" />
+    </record>t
+    
+
+
+    <record id="demo_pokemon_mewtwo_sprite_back" model="pokemon.sprite">
+        <field name="name">mewtwo back</field>
+        <field name="side">back</field>
+        <field name="file" file="pokemon/data/static/demo/mewtwo_back.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_mewtwo_sprite_front" model="pokemon.sprite">
+        <field name="name">mewtwo front</field>
+        <field name="side">front</field>
+        <field name="file" file="pokemon/data/static/demo/mewtwo_front.png" type="base64"/>
+    </record>
+    
+
+    <record id="demo_pokemon_mewtwo" model="pokemon">
+        <field name="name">mewtwo</field>
+        <field name="weight">1220</field>
+        <field name="height">20</field>
+        <field name="sprites"
+                eval="[(6, 0, [ref('demo_pokemon_mewtwo_sprite_back'), ref('demo_pokemon_mewtwo_sprite_front')])]" />
+         <field name="types" eval="[(6, 0, [ref('pokemon_type_psychic')] )]" />
+    </record>
+    
+    
+
 </odoo>
