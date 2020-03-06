@@ -1,11 +1,15 @@
 <odoo>
     <template id="pokemon.website">
-        <t t-call="website.layout">
+        <!-- <t t-call="web.assets_frontend"></t> -->
 
-
-            <div id="pokemon_application"></div>
-
-
+        <t t-call="web.layout">
+            <t t-set="head">
+                <t t-call-assets="web.assets_common"/>
+                <script type="text/javascript" src="/pokemon/static/src/js/components/App.js"></script>
+                <script type="text/javascript" src="/pokemon/static/src/js/main.js"></script>
+            </t>
+            <div id="pokemon_application"> </div>
         </t>
+
     </template>
 </odoo>
